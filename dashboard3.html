@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"> -->
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand&display=swap" rel="stylesheet">
+    <title>
+        Sports Betting</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="dashboardstyle2.css">
+</head>
+
+<body>
+
+    <div class="flex bg-gray-200 w-full h-full">
+        <div class="flex flex-col bg-blue-800 h-full w-3/12 ">
+            <div class="flex flex-col p-4 border-r-8 border-b-8 border-blue-200 m-4">
+                <p class="flex-col font-mono text-lg text-6xl font-extrabold text-white">
+                    Sports
+                </p>
+                <p class="flex-col font-mono text-lg text-6xl font-extrabold text-white">
+                    Betting
+                </p>
+                <p class="flex-col font-mono text-lg text-6xl font-extrabold text-white">
+                    Website
+                </p>
+            </div>
+
+            <div class="flex flex-col p-4">
+                <div class="flex m-2 border-blue-200 border-r-8">
+                    <a class="font-mono text-lg text-white text-4xl hover:bg-grey-lighter mt-2" href="dashboard3.html">
+                        Home
+                    </a>
+                </div>
+                <div class="flex m-2 mt-2">
+                    <a class="font-mono text-lg text-white text-4xl hover:bg-grey-lighter" href="account.html">
+                        Account
+                    </a>
+                </div>
+                <div class="flex m-2 mt-2">
+                    <a class="font-mono text-lg text-white text-4xl hover:bg-grey-lighter" href="about.html">
+                        About
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col bg-blue-800 h-full w-5/6">
+            <div class="flex h-24 bg-gray-900 p-4">
+                <div class="flex w-1/6">
+                    <div class="flex rounded-lg border-white border-4 p-1 ml-8  ">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 22 22" width="36" height="36">
+                            <path class="heroicon-ui flex" fill="#ffffff"
+                                d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z" />
+                        </svg>
+                        <div class="flex pl-4">
+                            <input class="flex bg-transparent text-white text-2xl focus:outline-none" type="text"
+                                id="myInput" placeholder="Search...">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-end w-5/6">
+                    <button onclick="sign_out()"
+                        class="bg-transparent hover:bg-white text-white font-semibold hover:text-black py-2 px-4 border-4 border-white hover:border-transparent rounded text-3xl ">
+                        Logout
+                    </button>
+                </div>
+            </div>
+            <div class="flex flex-col h-full bg-white p-6 overflow-auto" id="cardHolder">
+
+                <div class="flex flex-col flex-row  border-t-8 border-b-8 border-blue-800 border-dashed">
+                    <div class="flex flex-row overflow-x-auto" id="myUL">
+
+                        <div class="flex flex-no-wrap text-gray-700 text-center bg-gray-400  py-2 px-4 m-2 ">
+                            <a href="https://www.azcardinals.com/">
+                                Arizona Cardinals</a></div>
+                        <div class="flex text-gray-700 text-center bg-gray-400 p-2 m-2 "><a
+                                href="https://www.atlantafalcons.com/"> Atlanta
+                                Falcons </a></div>
+                        <div class="flex text-gray-700 text-center bg-gray-400 p-2 m-2 "><a
+                                href="https://www.baltimoreravens.com/">
+                                Baltimore Ravens </a></div>
+                        <div class="flex text-gray-700 text-center bg-gray-400 p-2 m-2  "><a
+                                href="https://www.buffalobills.com/"> Buffalo
+                                Bills </a></div>
+                        <div class="flex text-gray-700 text-center bg-gray-400 p-2 m-2 "><a
+                                href="https://www.panthers.com/">
+                                Carolina Panthers </a></div>
+                        <div class="flex text-gray-700 text-center bg-gray-400 p-2 m-2  "><a
+                                href="https://www.chicagobears.com/"> Chicago
+                                Bears </a></div>
+                        <div class="flex text-gray-700 text-center bg-gray-400 p-2 m-2 "><a
+                                href="https://www.bengals.com/">
+                                Cincinnati Bengals </a></div>
+                        <div class="flex text-gray-700 text-center bg-gray-400 p-2 m-2 "><a
+                                href="https://www.dallascowboys.com/"> Dallas
+                                Cowboys </a></div>
+                        <div class="flex text-gray-700 text-center bg-gray-400 p-2 m-2 "><a
+                                href="https://www.denverbroncos.com/"> Denver
+                                Broncos </a></div>
+                        <div class="flex text-gray-700 text-center bg-gray-400 p-2 m-2 "><a
+                                href="https://www.detroitlions.com/"> Detroit
+                                Lions </a></div>
+                        <div class="flex text-gray-700 text-center bg-gray-400 p-2 m-2 "><a
+                                href="https://www.packers.com/">
+                                Green
+                                Bay Packers </a></div>
+                        <div class="flex text-gray-700 text-center bg-gray-400 p-2 m-2 "><a
+                                href="https://www.houstontexans.com/"> Houston
+                                Texans </a></div>
+                        <div class="flex text-gray-700 text-center bg-gray-400 p-2 m-2 "><a
+                                href="https://www.colts.com/">
+                                Indianapolis Colts </a></div>
+                        <div class="flex text-gray-700 text-center bg-gray-400 p-2 m-2 "><a
+                                href="https://www.jaguars.com/">
+                                Jacksonville Jaguars </a></div>
+                        <div class="flex text-gray-700 text-center bg-gray-400 p-2 m-2 "><a
+                                href="https://www.chiefs.com/">
+                                Kansas
+                                City Chiefs </a></div>
+                        <div class="flex text-gray-700 text-center bg-gray-400 p-2 m-2 "><a
+                                href="https://www.chargers.com/"> Los
+                                Angeles Chargers </a></div>
+                        <div class="flex text-gray-700 text-center bg-gray-400 p-2 m-2 "><a
+                                href="https://www.therams.com/">
+                                Los
+                                Angeles Rams </a></div>
+                        <div class="flex text-gray-700 text-center bg-gray-400 p-2 m-2 "><a
+                                href="https://www.miamidolphins.com/"> Miami
+                                Dolphins </a></div>
+                        <div class="flex text-gray-700 text-center bg-gray-400 p-2 m-2 "><a
+                                href="https://www.vikings.com/">
+                                Minnesota Vikings </a></div>
+                        <div class="flex text-gray-700 text-center bg-gray-400 p-2 m-2 "><a
+                                href="https://www.patriots.com/"> New
+                                England Patriots </a></div>
+                        <div class="flex text-gray-700 text-center bg-gray-400 p-2 m-2 "><a
+                                href="https://www.neworleanssaints.com/"> New
+                                Orleans Saints </a></div>
+                        <div class="flex text-gray-700 text-center bg-gray-400 p-2 m-2 "><a
+                                href="https://www.giants.com/">
+                                New York
+                                Giants </a></div>
+                        <div class="flex text-gray-700 text-center bg-gray-400 p-2 m-2 "><a
+                                href="https://www.newyorkjets.com/"> New York
+                                Jets </a></div>
+                        <div class="flex text-gray-700 text-center bg-gray-400 p-2 m-2 "><a
+                                href="https://www.raiders.com/">
+                                Oakland
+                                Raiders </a></div>
+                        <div class="flex text-gray-700 text-center bg-gray-400 p-2 m-2 "><a
+                                href="https://www.philadelphiaeagles.com/">
+                                Philadelphia Eagles </a></div>
+                        <div class="flex text-gray-700 text-center bg-gray-400 p-2 m-2 "><a
+                                href="https://www.steelers.com/">
+                                Pittsburgh Steelers </a></div>
+                        <div class="flex text-gray-700 text-center bg-gray-400 p-2 m-2 "><a
+                                href="https://www.49ers.com/">
+                                San
+                                Francisco 49ers </a></div>
+                        <div class="flex text-gray-700 text-center bg-gray-400 p-2 m-2 "><a
+                                href="https://www.seahawks.com/"> Seattle
+                                Seahawks </a></div>
+                        <div class="flex text-gray-700 text-center bg-gray-400 p-2 m-2 "><a
+                                href="https://www.buccaneers.com/">
+                                Tampa Bay Buccaneers </a></div>
+                        <div class="flex text-gray-700 text-center bg-gray-400 p-2 m-2 "><a
+                                href="https://www.titansonline.com/">
+                                Tennessee Titans </a></div>
+                        <div class="flex text-gray-700 text-center bg-gray-400 p-2 m-2 "><a
+                                href="https://www.redskins.com/">
+                                Washington Redskins </a></div>
+                    </div>
+
+                </div>
+
+                <div id="money" class="flex-col justify-center bg-blue-800 shadow-xl rounded-lg m-4 ">
+                    <div>
+                        <div class="flex flex-col justify-center p-2">
+                            <div class="flex justify-center">
+                                <p id="moneyAmount" class="text-center text-4xl text-white" id="teamNames">You Have: $<p
+                                        class="text-center text-4xl text-white" id="moneyAmount2"></p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden flex-col justify-center rounded-lg m-4 shadow-xl bg-gray-300" id="gameCard">
+                    <div>
+                        <div class="flex flex-col justify-center p-2">
+                            <div class="flex justify-center">
+                                <p class="text-center text-4xl" id="teamNames">Home vs Away</p>
+                            </div>
+                            <div class="flex justify-center">
+                                <p class="text-center text-2xl" id="gameOdds">Odds:</p>
+                            </div>
+                            <div class="flex justify-center">
+                                <p class="text-center text-2xl" id="gameDate">Date:</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-around p-2">
+                            <div class="flex">
+                                <button
+                                    class="bg-blue-800 hover:bg-blue-200 text-white font-bold py-2 px-4 rounded-full homeBet text-xl">
+                                    Bet on Home
+                                </button>
+                            </div>
+                            <div class="flex">
+                                <input
+                                    class="betAmount shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-xl"
+                                    type="number" name="quantity" min="1" id="betField" placeholder="Bet Amount">
+                            </div>
+                            <div class="flex">
+                                <button
+                                    class="bg-blue-800 hover:bg-blue-200 text-white font-bold py-2 px-4 rounded-full awayBet text-xl">
+                                    Bet on Away
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+
+        var button = document.getElementById("myInput");
+        function throttle(f, delay) {
+            var timer = null;
+            return function () {
+                var context = this, args = arguments;
+                clearTimeout(timer);
+                timer = window.setTimeout(function () {
+                    f.apply(context, args);
+                },
+                    delay || 500);
+            };
+        }
+
+        button.onkeyup = throttle(function () {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName("div");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        });
+        // const debounce = (func, delay) => {
+        //     let debounceTimer
+        //     return function () {
+
+        //         const context = this
+        //         const args = arguments
+        //         clearTimeout(debounceTimer)
+        //         debounceTimer
+        //             = setTimeout(() => func.apply(context, args), delay)
+        //     }
+        // }
+        // button.addEventListener('click', debounce(function () {
+        //     var input, filter, ul, li, a, i, txtValue;
+        //     input = document.getElementById("myInput");
+        //     filter = input.value.toUpperCase();
+        //     ul = document.getElementById("myUL");
+        //     li = ul.getElementsByTagName("div");
+        //     for (i = 0; i < li.length; i++) {
+        //         a = li[i].getElementsByTagName("a")[0];
+        //         txtValue = a.textContent || a.innerText;
+        //         if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        //             li[i].style.display = "";
+        //         } else {
+        //             li[i].style.display = "none";
+        //         }
+        //     }
+        // }
+
+        //     , 1000));
+
+
+
+
+    </script>
+    <script type="module">
+        var firebaseConfig = {
+            apiKey: "AIzaSyAUCvhMARWj4SbCv3Bh1-mzo4OC31hIg3g",
+            authDomain: "sportsbetting-61b8e.firebaseapp.com",
+            databaseURL: "https://sportsbetting-61b8e.firebaseio.com",
+            projectId: "sportsbetting-61b8e",
+            storageBucket: "sportsbetting-61b8e.appspot.com",
+            messagingSenderId: "688706831427",
+            appId: "1:688706831427:web:1a7c0b4f2ae2a8aea640f6",
+            measurementId: "G-QZQS0PGRJD"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        var db = firebase.firestore();
+
+        var provider = new firebase.auth.GoogleAuthProvider();
+        function sign_in() {
+            firebase.auth().signInWithRedirect(provider);
+        }
+
+        firebase.auth().onAuthStateChanged(function (user) {
+            if (user) {
+                console.log("user is signed in ");
+                var user = firebase.auth().currentUser;
+                var docRef = db.collection("users").doc(user.uid);
+                docRef.get().then(function (doc) {
+                    var filename = 0;
+                    if (doc.exists) {
+                        console.log(doc.data().count);
+                    } else {
+                        db.collection("users").doc(user.uid).set({ money: 1000, numberOfBets: 0, counter: 0 });
+                    }
+                });
+                setTimeout(function () {
+                    printMoney(user);
+                }, 1000);
+            } else {
+                console.log("no user is signed in ");
+                window.location.href = "index.html";
+            }
+        });
+        // let user = firebase.auth().currentUser;
+        // var userMoney;
+        // console.log(firebase.auth().currentUser);
+        async function printMoney(user) {
+            var userMoney;
+            if (user) {
+                console.log("here");
+                var docRef = db.collection("users").doc(user.uid);
+                userMoney = await docRef.get().then(function (doc) {
+                    console.log("here");
+                    if (doc.exists) {
+                        return doc.data().money;
+                    }
+                });
+            }
+            console.log(userMoney);
+            document.getElementById("moneyAmount2").innerHTML += userMoney;
+        }
+
+        // const menuIconEl = $('.menu-icon');
+        // const sidenavEl = $('.sidenav');
+        // const sidenavCloseEl = $('.sidenav__close-icon');
+
+        // // Add and remove provided class names
+        // function toggleClassName(el, className) {
+        //   if (el.hasClass(className)) {
+        //     el.removeClass(className);
+        //   } else {
+        //     el.addClass(className);
+        //   }
+        // }
+
+        // // Open the side nav on click
+        // menuIconEl.on('click', function() {
+        //   toggleClassName(sidenavEl, 'active');
+        // });
+
+        // // Close the side nav on click
+        // sidenavCloseEl.on('click', function() {
+        //   toggleClassName(sidenavEl, 'active');
+        // });
+        const api_key = '36511e1c5dbedf6c43bfe84dbb66e7ad'
+        let sport_key = "americanfootball_nfl"
+        export async function getOdds(id) {
+            const odds = await axios.get('https://api.the-odds-api.com/v3/odds', {
+                params: {
+                    api_key: api_key,
+                    sport: sport_key,
+                    region: 'us', // uk | us | au
+                    mkt: 'h2h' // h2h | spreads | totals
+                }
+            });
+            console.log('Remaining requests', odds.headers['x-requests-remaining'])
+            return odds.data.data;
+        };
+        async function bet(amount, game, home) {
+            let user = firebase.auth().currentUser;
+            if (user) {
+                var docRef = db.collection("users").doc(user.uid);
+                // .collection("bets").doc("active bets");
+                docRef.get().then(function (doc) {
+                    var filename = 0;
+                    if (doc.exists) {
+                        var finalAmount = doc.data().money - amount;
+                        if (finalAmount >= 0) {
+                            db.collection("users").doc(user.uid).update({ money: finalAmount });
+                            console.log(finalAmount);
+                            filename = doc.data().numberOfBets + 1;
+                            var c = doc.data().counter + 1;
+                            db.collection("users").doc(user.uid).update({ numberOfBets: filename });
+                            db.collection("users").doc(user.uid).update({ counter: filename });
+                            console.log(filename);
+                        } else {
+                            throw "amount in account is not sufficient";
+                        }
+                    } else {
+                        throw "bet cannot be placed since user doesn't exist";
+                    }
+                    document.getElementById("moneyAmount2").innerHTML -= amount;
+                    var gameName = (game.Home + "|" + game.Away).replace(/ /g, "_");
+                    var index = "" + doc.data().counter;
+                    const ID = user.uid + index;
+                    docRef = db.collection("users").doc(user.uid).collection("activeBets").doc(ID);
+                    if (!docRef.get().exists) {
+                        docRef.set({ id: ID, homeBet: 0, awayBet: 0, homeOdds: game.odds[0], awayOdds: game.odds[1], user: user.uid, game: gameName, date: game.date, betOnHome: true });
+                    }
+                    if (home) {
+                        db.collection("users").doc(user.uid).collection("activeBets").doc(ID).update({ homeBet: amount });
+                    } else {
+                        db.collection("users").doc(user.uid).collection("activeBets").doc(ID).update({ awayBet: amount, betOnHome: false });
+                    }
+
+                    var bets = db.collection("bets").doc(ID).set({ id: ID, homeBet: 0, awayBet: 0, homeOdds: game.odds[0], awayOdds: game.odds[1], user: user.uid, game: gameName, date: game.date, betOnHome: true });
+                    if (home) {
+                        db.collection("bets").doc(ID).update({ homeBet: amount });
+                    } else {
+                        db.collection("bets").doc(ID).update({ awayBet: amount, betOnHome: false });
+                    }
+
+                })
+                    .catch(function (error) {
+                        alert(error);
+                    });
+            }
+        }
+        async function printOdds() {
+
+            var gameOdds = [];
+            let result = await getOdds();
+            console.log(result);
+            //let result = result.data;
+            for (let i = 0; i < result.length; i++) {
+                var odds = {};
+                console.log(result[0])
+                odds["Home"] = result[i].home_team;
+                if (odds["Home"] === result[i].teams[0]) {
+                    odds["odds"] = avgOdds(result[i].sites, 0);
+                    odds["Away"] = result[i].teams[1];
+                } else {
+                    odds["odds"] = avgOdds(result[i].sites, 1);
+                    odds["Away"] = result[i].teams[0];
+                }
+                odds["date"] = getDate(result[i].commence_time);
+
+                gameOdds.push(odds);
+            }
+            console.log(gameOdds[0].Home);
+            for (let i = 0; i < gameOdds.length; i++) {
+                let clone = document.getElementById("gameCard").cloneNode(true);
+
+                let id = (gameOdds[i].Home + "|" + gameOdds[i].Away).replace(/ /g, "_");
+                console.log(id);
+                clone.id = id;
+                let homeClass = gameOdds[i].Home.replace(/ /g, "-");
+                let awayClass = gameOdds[i].Away.replace(/ /g, "-");
+                clone.classList.add(homeClass);
+                clone.classList.add(awayClass);
+                let names = clone.querySelector("#teamNames");
+                names.innerHTML = gameOdds[i].Home + " vs " + gameOdds[i].Away;
+                let oddsHtml = clone.querySelector("#gameOdds");
+                oddsHtml.innerHTML = "Odds: " + gameOdds[i].odds[0].toString().substring(0, 5) + " , " + gameOdds[i].odds[1].toString().substring(0, 5);
+                let gameDate = clone.querySelector("#gameDate");
+                gameDate.innerHTML = gameOdds[i].date;
+                clone.style.display = "flex";
+                // clone.querySelector(".selectTeam").options[1].innerHTML = gameOdds[i]["Home"];
+                // clone.querySelector(".selectTeam").options[2].innerHTML = gameOdds[i]["Away"];
+                clone.querySelector(".homeBet").addEventListener("click", function () {
+                    //var card = event.target.parentElement.parentElement;
+                    //console.log(event.target.parentElement.parentElement.childNodes);
+                    //let parent = event.target.parentElement.parentElement.querySelector(".betAmount").value;
+                    let amount = event.target.parentElement.parentElement.querySelector(".betAmount").value;
+                    console.log(amount);
+                    //let id = event.target.parentElement.parentElement.id;
+                    //var home;
+
+                    if (!isNaN(amount) && amount > 0 && amount !== '') {
+                        buttonEvent(amount, gameOdds[i], true);
+                        event.target.parentElement.parentElement.querySelector(".betAmount").value = "";
+                    }
+                    //viewReplies(id, card);
+                });
+
+                clone.querySelector(".awayBet").addEventListener("click", function () {
+                    //var card = event.target.parentElement.parentElement;
+                    // let amount = event.target.previousSibling.previousSibling.value;
+                    // console.log(event.target.previousSibling.previousSibling.value);
+                    // let id = event.target.parentElement.parentElement.id;
+                    // var home;
+                    let amount = event.target.parentElement.parentElement.querySelector(".betAmount").value;
+                    console.log(amount);
+                    if (!isNaN(amount) && amount > 0 && amount !== '') {
+                        buttonEvent(amount, gameOdds[i], false);
+                        event.target.parentElement.parentElement.querySelector(".betAmount").value = "";
+                    }
+                    //viewReplies(id, card);
+                });
+
+                document.getElementById("cardHolder").appendChild(clone);
+            }
+        }
+        function getDate(UNIX_timestamp) {
+            var a = new Date(UNIX_timestamp * 1000);
+            var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+            var year = a.getFullYear();
+            var month = months[a.getMonth()];
+            var date = a.getDate();
+            var hour = a.getHours();
+            var min = a.getMinutes();
+            var sec = a.getSeconds();
+            var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec;
+            return time;
+        }
+        function avgOdds(sites, home) {
+            let firstOdd = 0;
+            let secondOdd = 0;
+            for (let i = 0; i < sites.length; i++) {
+                firstOdd += sites[i].odds.h2h[0];
+                secondOdd += sites[i].odds.h2h[1];
+            }
+            if (home === 0) {
+                return [firstOdd / sites.length, secondOdd / sites.length];
+            }
+            return [secondOdd / sites.length, firstOdd / sites.length];
+
+        }
+        printOdds();
+
+        function buttonEvent(amount, gameObj, homeBool) {
+            console.log(amount);
+            console.log(gameObj);
+            console.log(homeBool);
+            bet(amount, gameObj, homeBool);
+
+        }
+    </script>
+    <script>
+        function sign_out() {
+            firebase.auth().signOut().then(function () {
+                window.location.href = "index.html"
+            }).catch(function (error) {
+                // An error happened.
+            });
+        }
+    </script>
+    <!-- <script type="module" src="script.js"></script> -->
+</body>
+
+
+
+</html>
